@@ -31,7 +31,7 @@ PORT = int(os.environ.get("PORT", 25505))
 HTTP_PORT = int(os.environ.get("HTTP_PORT", PORT + 1))
 
 # MongoDB конфигурация - ИСПРАВЛЕНО: убрал порт из URI, он уже есть в строке подключения
-MONGODB_URI = os.environ.get("MONGODB_URI", "тут монго")
+MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://danikkostylev244_db_user:<db_password>@ac-62cmxjo-shard-00-00.ljhkebu.mongodb.net:27017,ac-62cmxjo-shard-00-01.ljhkebu.mongodb.net:27017,ac-62cmxjo-shard-00-02.ljhkebu.mongodb.net:27017/?ssl=true&replicaSet=atlas-qla38e-shard-0&authSource=admin&appName=V2Server")
 MONGODB_DB = os.environ.get("MONGODB_DB", "v2_standoff")
 MAX_MESSAGE_SIZE = 10 * 1024 * 1024  # 10MB
 PING_INTERVAL = 30
